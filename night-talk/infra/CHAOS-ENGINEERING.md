@@ -1,4 +1,4 @@
-Night Talk 56 — Chaos Engineering: quebrando seu próprio sistema de propósito
+# Night Talk 56 — Chaos Engineering: quebrando seu próprio sistema de propósito
 
 2 de maio de 2026
 
@@ -266,7 +266,7 @@ O caos vai te testar uma hora né
 
 ---
 
-Esse foi o Night Talk 66
+Esse foi o Night Talk 56
 
 Abraços,
 **Rian**
