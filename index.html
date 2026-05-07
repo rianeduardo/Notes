@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Second Brain Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: 'Lexend', sans-serif;
+        }
+
+        .navbar {
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-body {
+            color: white;
+        }
+
+        .night-talk-card {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 10px rgba(255, 107, 107, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 107, 107, 0);
+            }
+        }
+
+        .module-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 5rem 0;
+            color: white;
+        }
+
+        .hero-section h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-section p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-brain"></i> Second Brain</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#modules">Modules</a></li>
+                    <li class="nav-item"><a class="nav-link" href="night-talks.html">Night Talks</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <h1>Welcome to Rian's Second Brain</h1>
+            <p>Explore your knowledge universe, one module at a time.</p>
+            <a href="#modules" class="btn btn-light btn-lg"><i class="fas fa-rocket"></i> Dive In</a>
+        </div>
+    </section>
+
+    <div class="container my-5" id="modules">
+        <h2 class="text-center text-white mb-5">Knowledge Modules</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card night-talk-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-moon module-icon"></i>
+                        <h5 class="card-title">Night Talks</h5>
+                        <p class="card-text">Deep philosophical discussions and advanced concepts. Your current focus.
+                        </p>
+                        <a href="night-talks.html" class="btn btn-outline-light">Explore <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-cogs module-icon"></i>
+                        <h5 class="card-title">Architecture</h5>
+                        <p class="card-text">System design, distributed systems, scalability, and more.</p>
+                        <a href="architecture.html" class="btn btn-outline-light">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-server module-icon"></i>
+                        <h5 class="card-title">Backend</h5>
+                        <p class="card-text">API design, databases, caching, authentication, and testing.</p>
+                        <a href="backend.html" class="btn btn-outline-light">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-cloud module-icon"></i>
+                        <h5 class="card-title">Cloud</h5>
+                        <p class="card-text">AWS, Azure, GCP, Kubernetes, Docker, CI/CD, and more.</p>
+                        <a href="cloud.html" class="btn btn-outline-light">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-shield-alt module-icon"></i>
+                        <h5 class="card-title">Security</h5>
+                        <p class="card-text">Web, cloud, mobile, network security, crypto, and threat modeling.</p>
+                        <a href="security.html" class="btn btn-outline-light">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-network-wired module-icon"></i>
+                        <h5 class="card-title">Networks</h5>
+                        <p class="card-text">BGP, TCP/IP, DNS, routing, CDN, and zero-trust.</p>
+                        <a href="networks.html" class="btn btn-outline-light">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-mobile-alt module-icon"></i>
+                        <h5 class="card-title">Mobile</h5>
+                        <p class="card-text">Android and iOS security, reversing, and analysis techniques.</p>
+                        <a href="mobile.html" class="btn btn-outline-light">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-code module-icon"></i>
+                        <h5 class="card-title">Reverse Engineering</h5>
+                        <p class="card-text">Malware analysis, ELF, PE, assembly, and binary reversing.</p>
+                        <a href="reverse-engineering.html" class="btn btn-outline-light">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-flask module-icon"></i>
+                        <h5 class="card-title">Pentest Labs</h5>
+                        <p class="card-text">HackTheBox, TryHackMe, VulnHub, and custom labs.</p>
+                        <a href="pentest-labs.html" class="btn btn-outline-light">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-lightbulb module-icon"></i>
+                        <h5 class="card-title">Ideas & Theories</h5>
+                        <p class="card-text">Philosophy, system theory, future threats, and attack evolution.</p>
+                        <a href="ideas-and-theories.html" class="btn btn-outline-light">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-book module-icon"></i>
+                        <h5 class="card-title">Research</h5>
+                        <p class="card-text">Articles, papers, and summaries.</p>
+                        <a href="research.html" class="btn btn-outline-light">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-code-branch module-icon"></i>
+                        <h5 class="card-title">Frameworks</h5>
+                        <p class="card-text">React fundamentals and user dashboard projects.</p>
+                        <a href="frameworks.html" class="btn btn-outline-light">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-question module-icon"></i>
+                        <h5 class="card-title">Shoulds & Coulds</h5>
+                        <p class="card-text">Aspirational concepts and possibilities.</p>
+                        <a href="shoulds-coulds.html" class="btn btn-outline-light">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-search module-icon"></i>
+                        <h5 class="card-title">Why</h5>
+                        <p class="card-text">Foundational questions and reasoning.</p>
+                        <a href="why.html" class="btn btn-outline-light">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center text-white py-4">
+        <p>&copy; 2026 Rian's Second Brain. Built with creativity and passion.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
