@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night Talks - Deep Philosophical Discussions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            min-height: 100vh;
+            font-family: 'Lexend', sans-serif;
+            color: white;
+        }
+
+        .navbar {
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .section-card {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            margin-bottom: 2rem;
+        }
+
+        .talk-item {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            transition: background 0.3s ease;
+        }
+
+        .talk-item:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .talk-number {
+            font-weight: bold;
+            color: #ff6b6b;
+            margin-right: 1rem;
+        }
+
+        .talk-link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .talk-link:hover {
+            color: #4ecdc4;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-brain"></i> Second Brain</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ai">AI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#bitcoin">Bitcoin</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#engineering">Engineering</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#infra">Infra</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#security">Security & Cases</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#social">Social</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <h1><i class="fas fa-moon"></i> Night Talks</h1>
+            <p>Deep philosophical discussions and advanced concepts under the night sky.</p>
+        </div>
+    </section>
+
+    <div class="container my-5">
+        <div class="section-card p-4" id="ai">
+            <h3 class="mb-4"><i class="fas fa-robot"></i> AI Existentialism & Risks</h3>
+            <div class="talk-item">
+                <span class="talk-number">1.</span>
+                <a href="night-talk/ai/AGI-ASI.md" class="talk-link">AGI-ASI.md - Artificial General & Super
+                    Intelligence</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">2.</span>
+                <a href="night-talk/ai/ALUCINACAO.md" class="talk-link">ALUCINACAO.md - Hallucinations & model
+                    failures</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">3.</span>
+                <a href="night-talk/ai/ARMA.md" class="talk-link">ARMA.md - AI as weapon systems</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">4.</span>
+                <a href="night-talk/ai/CONTROLE.md" class="talk-link">CONTROLE.md - Control & alignment problems</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">5.</span>
+                <a href="night-talk/ai/DEEPFAKES.md" class="talk-link">DEEPFAKES.md - Synthetic media threats</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">6.</span>
+                <a href="night-talk/ai/FUTURO.md" class="talk-link">FUTURO.md - Future scenarios</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">7.</span>
+                <a href="night-talk/ai/GOURMET.md" class="talk-link">GOURMET.md - Refined/nuanced perspectives</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">8.</span>
+                <a href="night-talk/ai/PROMPT-INJECTION.md" class="talk-link">PROMPT-INJECTION.md - LLM vulnerability
+                    patterns</a>
+            </div>
+        </div>
+
+        <div class="section-card p-4" id="bitcoin">
+            <h3 class="mb-4"><i class="fas fa-bitcoin-sign"></i> Cryptocurrency Deep-Dive</h3>
+            <div class="talk-item">
+                <span class="talk-number">1.</span>
+                <a href="night-talk/bitcoin/ARQ-TECNICA.md" class="talk-link">ARQ-TECNICA.md - Technical
+                    architecture</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">2.</span>
+                <a href="night-talk/bitcoin/COMO_HACKERS_ROUBAM.md" class="talk-link">COMO_HACKERS_ROUBAM.md - Attack
+                    vectors & theft methods</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">3.</span>
+                <a href="night-talk/bitcoin/ERRO.md" class="talk-link">ERRO.md - Common mistakes/vulnerabilities</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">4.</span>
+                <a href="night-talk/bitcoin/HACKING.md" class="talk-link">HACKING.md - Bitcoin-specific exploits</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">5.</span>
+                <a href="night-talk/bitcoin/MINERACAO.md" class="talk-link">MINERACAO.md - Mining dynamics &
+                    economics</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">6.</span>
+                <a href="night-talk/bitcoin/MIXERS.md" class="talk-link">MIXERS.md - Privacy/mixing services</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">7.</span>
+                <a href="night-talk/bitcoin/QUANTICA.md" class="talk-link">QUANTICA.md - Quantum computing threats</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">8.</span>
+                <a href="night-talk/bitcoin/SEEDPHRASE.md" class="talk-link">SEEDPHRASE.md - Key management &
+                    recovery</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">9.</span>
+                <a href="night-talk/bitcoin/TRANSACOES.md" class="talk-link">TRANSACOES.md - Transaction mechanics</a>
+            </div>
+        </div>
+
+        <div class="section-card p-4" id="engineering">
+            <h3 class="mb-4"><i class="fas fa-cogs"></i> Advanced Technical Concepts</h3>
+            <div class="talk-item">
+                <span class="talk-number">1.</span>
+                <a href="night-talk/engineering/ALEATORIEDADE.md" class="talk-link">ALEATORIEDADE.md - Randomness &
+                    entropy</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">2.</span>
+                <a href="night-talk/engineering/BOTNETS.md" class="talk-link">BOTNETS.md - Malware networks</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">3.</span>
+                <a href="night-talk/engineering/FIDO.md" class="talk-link">FIDO.md - Authentication standards</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">4.</span>
+                <a href="night-talk/engineering/INTERNET_R.md" class="talk-link">INTERNET_R.md - Internet
+                    infrastructure/routing</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">5.</span>
+                <a href="night-talk/engineering/REVERSA.md" class="talk-link">REVERSA.md - Reverse engineering
+                    techniques</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">6.</span>
+                <a href="night-talk/engineering/TOR.md" class="talk-link">TOR.md - Anonymity networks</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">7.</span>
+                <a href="night-talk/engineering/VMPROTECT.md" class="talk-link">VMPROTECT.md - Virtual machine
+                    protection/evasion</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">8.</span>
+                <a href="night-talk/engineering/WARTECH.md" class="talk-link">WARTECH.md - Wartime technology
+                    strategies</a>
+            </div>
+        </div>
+
+        <div class="section-card p-4" id="infra">
+            <h3 class="mb-4"><i class="fas fa-server"></i> Infrastructure Vulnerabilities</h3>
+            <div class="talk-item">
+                <span class="talk-number">1.</span>
+                <a href="night-talk/infra/ANYCAST.md" class="talk-link">ANYCAST.md - Anycast routing attacks</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">2.</span>
+                <a href="night-talk/infra/APAGAO-CLOUDFLARE.md" class="talk-link">APAGAO-CLOUDFLARE.md - Major outage
+                    case study</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">3.</span>
+                <a href="night-talk/infra/BGP-HIJACK.md" class="talk-link">BGP-HIJACK.md - BGP routing hijacking</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">4.</span>
+                <a href="night-talk/infra/CABOS-SUBMARINOS.md" class="talk-link">CABOS-SUBMARINOS.md - Submarine cable
+                    vulnerabilities</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">5.</span>
+                <a href="night-talk/infra/CHAOS-ENGINEERING.md" class="talk-link">CHAOS-ENGINEERING.md - Resilience
+                    testing</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">6.</span>
+                <a href="night-talk/infra/DNS.md" class="talk-link">DNS.md - DNS fundamentals</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">7.</span>
+                <a href="night-talk/infra/DNS-POISON.md" class="talk-link">DNS-POISON.md - DNS poisoning attacks</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">8.</span>
+                <a href="night-talk/infra/EDOS.md" class="talk-link">EDOS.md - Edge case DoS vectors</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">9.</span>
+                <a href="night-talk/infra/SPOF.md" class="talk-link">SPOF.md - Single Points of Failure</a>
+            </div>
+        </div>
+
+        <div class="section-card p-4" id="security">
+            <h3 class="mb-4"><i class="fas fa-shield-alt"></i> Security & Real-World Cases</h3>
+            <div class="talk-item">
+                <span class="talk-number">1.</span>
+                <a href="night-talk/security-and-cases/ANONYMOUS.md" class="talk-link">ANONYMOUS.md - Hacktivism
+                    movements</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">2.</span>
+                <a href="night-talk/security-and-cases/ASSANGE-WIKILEAKS.md" class="talk-link">ASSANGE-WIKILEAKS.md -
+                    Information leaks & consequences</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">3.</span>
+                <a href="night-talk/security-and-cases/DDOS.md" class="talk-link">DDOS.md - Distributed denial of
+                    service</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">4.</span>
+                <a href="night-talk/security-and-cases/EQUIFAX.md" class="talk-link">EQUIFAX.md - Major breach case
+                    study</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">5.</span>
+                <a href="night-talk/security-and-cases/ILUSAO-PRIVACIDADE.md" class="talk-link">ILUSAO-PRIVACIDADE.md -
+                    Privacy illusions & surveillance</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">6.</span>
+                <a href="night-talk/security-and-cases/MFA.md" class="talk-link">MFA.md - Multi-factor
+                    authentication</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">7.</span>
+                <a href="night-talk/security-and-cases/NOTPETY A.md" class="talk-link">NOTPETYA.md - Destructive wiper
+                    malware</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">8.</span>
+                <a href="night-talk/security-and-cases/PHISHING.md" class="talk-link">PHISHING.md - Social engineering
+                    attacks</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">9.</span>
+                <a href="night-talk/security-and-cases/SHADOWIT.md" class="talk-link">SHADOWIT.md - Shadow IT risks</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">10.</span>
+                <a href="night-talk/security-and-cases/SILKROAD.md" class="talk-link">SILKROAD.md - Dark web marketplace
+                    case</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">11.</span>
+                <a href="night-talk/security-and-cases/SONYHACK.md" class="talk-link">SONYHACK.md - Attribution &
+                    geopolitics</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">12.</span>
+                <a href="night-talk/security-and-cases/THETHING.md" class="talk-link">THETHING.md - Critical
+                    infrastructure scenarios</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">13.</span>
+                <a href="night-talk/security-and-cases/VAZAMENTOS.md" class="talk-link">VAZAMENTOS.md - Data leaks &
+                    exfiltration</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">14.</span>
+                <a href="night-talk/security-and-cases/ZERODAYS.md" class="talk-link">ZERODAYS.md - Zero-day
+                    vulnerabilities</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">15.</span>
+                <a href="night-talk/security-and-cases/ZEROTRUST.md" class="talk-link">ZEROTRUST.md - Zero-trust
+                    architecture paradigm</a>
+            </div>
+        </div>
+
+        <div class="section-card p-4" id="social">
+            <h3 class="mb-4"><i class="fas fa-users"></i> Human Factors & Society</h3>
+            <div class="talk-item">
+                <span class="talk-number">1.</span>
+                <a href="night-talk/social/ATENCAO.md" class="talk-link">ATENCAO.md - Attention economy & focus</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">2.</span>
+                <a href="night-talk/social/BURNOUT-GRIND.md" class="talk-link">BURNOUT-GRIND.md - Burnout culture &
+                    hustle</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">3.</span>
+                <a href="night-talk/social/FBI.md" class="talk-link">FBI.md - Law enforcement perspectives</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">4.</span>
+                <a href="night-talk/social/FUTURO-DECISOES.md" class="talk-link">FUTURO-DECISOES.md - Future
+                    decision-making</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">5.</span>
+                <a href="night-talk/social/GEOARBITRAGEM.md" class="talk-link">GEOARBITRAGEM.md - Geographic arbitrage
+                    strategies</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">6.</span>
+                <a href="night-talk/social/GERACAODEDEVS.md" class="talk-link">GERACAODEDEVS.md - Dev generation
+                    characteristics</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">7.</span>
+                <a href="night-talk/social/LEIFELCA.md" class="talk-link">LEIFELCA.md - Work-life balance philosophy</a>
+            </div>
+            <div class="talk-item">
+                <span class="talk-number">8.</span>
+                <a href="night-talk/social/PORQUE-TUDOQUEBRA.md" class="talk-link">PORQUE-TUDOQUEBRA.md - Why everything
+                    breaks/systems collapse</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center text-white py-4">
+        <p>&copy; 2026 Rian's Second Brain. Night Talks Edition.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -47,7 +47,30 @@ Esse repositório é guiado por:
 Apesar do README estar em português, **a maior parte das anotações será em inglês**, por alguns motivos:
 
 - Melhorar meu domínio técnico da língua  
-- Facilitar o consumo de conteúdo internacional  
+- Facilitar o consumo de conteúdo internacional
+
+---
+
+## 🌐 Dashboard Interativo
+
+Agora você tem um **dashboard bonito e funcional** para navegar pelo seu Second Brain!
+
+### Recursos:
+- **Página Principal (`index.html`)**: Dashboard com cards para todos os módulos, destaque especial para Night Talks.
+- **Página Night Talks (`night-talks.html`)**: Seção dedicada com numeração sequencial para suas discussões profundas.
+- **Páginas de Módulos**: Cada módulo tem sua própria página listando submódulos e arquivos.
+- **Design Moderno**: Gradientes, animações, responsivo, tema escuro com efeitos glassmorphism.
+
+### Como Usar:
+1. Abra `index.html` no seu navegador.
+2. Explore os módulos clicando nos cards.
+3. Mergulhe nos Night Talks para seu foco atual.
+4. Links levam diretamente aos seus arquivos Markdown.
+
+### Módulos Disponíveis:
+- Architecture, Backend, Cloud, Security, Networks, Mobile, Reverse Engineering, Pentest Labs, Ideas & Theories, Research, **Night Talks** ⭐, Frameworks, Shoulds & Coulds, Why.
+
+O dashboard mantém toda sua estrutura original intacta, apenas adicionando navegação visual!  
 - Me acostumar a pensar tecnicamente em inglês  
 - Ter acesso mais direto a pesquisas, artigos, papers e documentações  
 - Me preparar melhor para o cenário global  
@@ -75,6 +98,31 @@ Resumindo:
     /research
     /shoulds-coulds
     /why
+```
+
+---
+
+## 🌐 Dashboard Interativo
+
+Agora você tem um **dashboard bonito e funcional** para navegar pelo seu Second Brain!
+
+### Recursos:
+- **Página Principal (`index.html`)**: Dashboard com cards para todos os módulos, destaque especial para Night Talks.
+- **Página Night Talks (`night-talks.html`)**: Seção dedicada com numeração sequencial para suas discussões profundas.
+- **Páginas de Módulos**: Cada módulo tem sua própria página listando submódulos e arquivos.
+- **Design Moderno**: Gradientes, animações, responsivo, tema escuro com efeitos glassmorphism.
+- **Tipografia Personalizada**: Usando Lexend do Google Fonts para uma aparência única.
+
+### Como Usar:
+1. Abra `index.html` no seu navegador.
+2. Explore os módulos clicando nos cards.
+3. Mergulhe nos Night Talks para seu foco atual.
+4. Todas as suas notas originais permanecem intactas.
+
+### Módulos Disponíveis:
+- Architecture, Backend, Cloud, Security, Networks, Mobile, Reverse Engineering, Pentest Labs, Ideas & Theories, Research, **Night Talks** ⭐, Frameworks, Shoulds & Coulds, Why.
+
+O dashboard mantém toda sua estrutura original intacta, apenas adicionando navegação visual!
     /night-talk
 ``` 
 
